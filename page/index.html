@@ -21,11 +21,11 @@
             </div>
         </nav>
     </header>
-    <div style="width: 100%; height: 100%; display:flex; background-color: #000000;">
+    <div style="width: 100%; height: 100%; margin-bottom: 80px; margin-top: 5px; display:flex; background-color: #000000;">
         <div style="display: flex; flex-direction: space-between; width: 100%;">
-            <div id="BodyLeft" class="resizable" style="width: 25%; overflow-y: auto; max-height: 175vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; text-align: left;">
+            <div id="BodyLeft" class="resizable" style="width: 25%; overflow-y: auto; max-height: 170vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; text-align: left;">
                 <div style="width: 100%; margin: 8px; display: flex; flex-direction: column;">
-                    <div class="ButtonArtistLeftSidebarFoto">
+                    <div class="ButtonArtistLeftSidebarFoto itemFotoArtis">
                         <img id="IdFotoSidebarKiriTop" src="https://i.pinimg.com/originals/cc/ca/5c/ccca5c1d778a1ab6a8b848b190160b26.jpg" width="100%" style="border-radius: 10px;">
                     </div>
                     <div style="color: #FFF;">
@@ -39,7 +39,7 @@
                     <div class="ButtonArtistLeftSidebar" style="display: flex; flex-direction: column; border-radius: 5px;">
                         <div style="height: auto; border-radius: 2px;">
                             <div>
-                                <div id="IdFotoSidebarKiriCenter" style="background-image: url('https://i.pinimg.com/564x/8a/ed/18/8aed18a0f0e84db52ed8a84f47de4193.jpg'); background-size: cover; background-position: center; border-image: fill 0 linear-gradient(#0001, #000); width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                                <div id="IdFotoSidebarKiriCenter" class="itemFotoArtis" style="background-image: url('https://i.pinimg.com/564x/8a/ed/18/8aed18a0f0e84db52ed8a84f47de4193.jpg'); background-size: cover; background-position: center; border-image: fill 0 linear-gradient(#0001, #000); width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                                 <div style="background-color: #000000; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                     <p id="IdPSidebarKiri3" style="color: #FFF; margin: 15px 0px 0px 8px; font-size: 20px; font-weight: bold; color:#378C3F; text-align: justify; font-family: 'Poppins', sans-serif;"><i>Olivia Rodrigo</i></p>
                                     <p id="IdPSidebarKiri4" style="color: #FFF; margin: 8px 0px 0px 8px; font-size: 15px; font-weight: bold; color:#378C3F; text-align: justify; font-family: 'Poppins', sans-serif;"><i>59.646.533 Monthly Listeners</i></p>
@@ -78,7 +78,7 @@
                         </div>
                         <div style="background-color: #121212; display: flex; flex-direction: space-between; margin: 8px;">
                             <div>
-                                <img id="IdFotoSidebarKiriBottom" src="https://i.pinimg.com/originals/cc/ca/5c/ccca5c1d778a1ab6a8b848b190160b26.jpg" style="border-radius: 5px;" width="50px">
+                                <img id="IdFotoSidebarKiriBottom" class="itemFotoArtis" src="https://i.pinimg.com/originals/cc/ca/5c/ccca5c1d778a1ab6a8b848b190160b26.jpg" style="border-radius: 5px;" width="50px">
                             </div>
                             <div id="IdPSidebarKiri7" style="margin-left: 10px; display: flex; justify-content: center; align-items: center;">
                                 <p style="font-size: 12px; text-align: left; font-weight: bold; font-family: 'Poppins', sans-serif;"><font color='#fff'><strong>Deja Vu</strong><br/><i>Olivia Rodrigo</i></font></p>
@@ -87,9 +87,9 @@
                     </div>
                 </div>
             </div>   
-            <div id="BodyCenter" class="resizable" style="width: 50%; max-height: 175vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px;">
+            <div id="BodyCenter" class="resizable" style="width: 50%; max-height: 170vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px;">
                 <div id="middleSection1" style="height: 100%; overflow-y: auto; margin: 5px;">
-                    <p class="ClassTextOpening" style="color: #FFF; font-size: 30px; font-weight:bold; margin: 30px 5px 5px 5px; font-family: 'Poppins', sans-serif; ">
+                    <p class="ClassTextOpening" id="greetingText" style="color: #FFF; font-size: 30px; font-weight:bold; margin: 30px 5px 5px 5px; font-family: 'Poppins', sans-serif; ">
                         Selamat Malam
                     </p>
                     <p class="ClassTextOpening2" style="color: #FFF; font-style: italic; font-size: 16px; font-weight:bold; margin: 5px 5px 30px 5px; font-family: 'Poppins', sans-serif;">
@@ -2132,7 +2132,7 @@
                     </div>
                 </div>
                 <div hidden id="middleSection10">
-                    <div style="border-radius: 15px; height: 100%; max-height: 175vh; border-image: fill 0 linear-gradient(#0001, #000); margin: 5px; background-color: #378C3F; background-position: cover; background-position: center;">
+                    <div id="MarqueeLyrics" style="border-radius: 15px; height: 100%; max-height: 175vh; border-image: fill 0 linear-gradient(#0001, #000); margin: 5px; background-color: #378C3F; background-position: cover; background-position: center;">
                        <marquee style="height: 70vh; max-height: 70vh;" onmouseover="this.stop()" onmouseout="this.start()" behavior="scroll" direction="up" scrollamount="2">
                         <p class="Lyrics">I got my driver's license last week</p>
                         <p class="Lyrics">Just like we always talked about</p>
@@ -2180,44 +2180,44 @@
                     <div style="color: #FFF; margin: 10px; background-color: #000000; border-radius: 10px; margin-top: 30px;">
                         <div style="margin: 10px; padding: 10px; text-align: justify;">
                             <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="https://i.pinimg.com/236x/7e/f5/79/7ef579549eeee0d7b668f922dc2d1758.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/9e/11/7f/9e117fb800d99157c91a2344c5321ea6.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/6f/96/16/6f9616f300947764da78aaad919cf76b.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/02/19/5d/02195da58a873fe8c346930d97535fca.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/da/76/a9/da76a94c7493f92223d34937fb7e460c.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/eb/6e/07/eb6e0730cc939a8ae3bc3022b5130545.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                                 <img src="https://i.pinimg.com/236x/45/d6/77/45d677b9124635e1bc868c2e5637e03f.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/b6/50/40/b65040241f90fd29016974507bee35bc.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/c7/6d/04/c76d045642d13df1114b5a42512f1953.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                             </div>
                             <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="https://i.pinimg.com/236x/16/4e/70/164e703aa37ef8cc21316bd850ab8c3d.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/a4/f3/f7/a4f3f7216d8f4e29d3a31c07aecd58b0.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/1f/84/2e/1f842ea51f6f3f41b385daef2567c9b9.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/33/1f/85/331f859d0fcacc4fc7553a7f5f35f916.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/9e/86/b2/9e86b28849e4f4f79d0fab00eb348c91.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/4a/c8/be/4ac8be1b1ae4840d0b7e52e35f0f863e.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/01/4a/e9/014ae9eb789b38052be4f58ff79c39ab.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/01/c8/1a/01c81a4974d9ce1f425dacd3c41ad65b.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/4c/48/b1/4c48b126924d86df68f2a7df70023754.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/85/35/d2/8535d2eb581508fc5ac6813a50bcc5f2.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                             </div>
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="https://i.pinimg.com/236x/7e/f5/79/7ef579549eeee0d7b668f922dc2d1758.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/9e/11/7f/9e117fb800d99157c91a2344c5321ea6.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/6f/96/16/6f9616f300947764da78aaad919cf76b.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                            <div style="display: flex; justify-content: center; flex-direction: row-reverse; align-items: center;">
+                                <img src="https://i.pinimg.com/236x/02/19/5d/02195da58a873fe8c346930d97535fca.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/da/76/a9/da76a94c7493f92223d34937fb7e460c.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/eb/6e/07/eb6e0730cc939a8ae3bc3022b5130545.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                                 <img src="https://i.pinimg.com/236x/45/d6/77/45d677b9124635e1bc868c2e5637e03f.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/b6/50/40/b65040241f90fd29016974507bee35bc.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/c7/6d/04/c76d045642d13df1114b5a42512f1953.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                             </div>
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="https://i.pinimg.com/236x/16/4e/70/164e703aa37ef8cc21316bd850ab8c3d.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/a4/f3/f7/a4f3f7216d8f4e29d3a31c07aecd58b0.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/1f/84/2e/1f842ea51f6f3f41b385daef2567c9b9.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/33/1f/85/331f859d0fcacc4fc7553a7f5f35f916.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
-                                <img src="https://i.pinimg.com/236x/9e/86/b2/9e86b28849e4f4f79d0fab00eb348c91.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                            <div style="display: flex; justify-content: center; flex-direction: row-reverse; align-items: center;">
+                                <img src="https://i.pinimg.com/236x/4a/c8/be/4ac8be1b1ae4840d0b7e52e35f0f863e.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/01/4a/e9/014ae9eb789b38052be4f58ff79c39ab.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/01/c8/1a/01c81a4974d9ce1f425dacd3c41ad65b.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/4c/48/b1/4c48b126924d86df68f2a7df70023754.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
+                                <img src="https://i.pinimg.com/236x/85/35/d2/8535d2eb581508fc5ac6813a50bcc5f2.jpg" width="20%" style="display: flex; justify-content: center; align-items: center; text-align: center; border-radius: 0px; margin: 2px;">
                             </div>
                         </div>
                     </div>  
                 </div>
             </div>
-            <div id="BodyRight" class="resizable" style="width: 25%; overflow-y: auto; max-height: 175vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px;">
+            <div id="BodyRight" class="resizable" style="width: 25%; overflow-y: auto; max-height: 170vh; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px;">
                 <div style="display: flex; flex-direction: column; background-color: #000000; margin: 3px; border-radius: 15px 15px 8px 8px;">
-                    <div style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
+                    <div class="ClassTextOpening" style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
                         <div style="margin-right: 10px; font-family: 'Poppins', sans-serif;"><i class="fa-solid fa-house"></i></div>
                         <div style="margin-left: 10px;"><p style="font-family: 'Poppins', sans-serif; margin: 0px;">Home</p></div>
                     </div>
-                    <div style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
+                    <div class="ClassTextOpening" style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
                         <div style="margin-right: 10px; font-family: 'Poppins', sans-serif;"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <div style="margin-left: 10px;"><p style="font-family: 'Poppins', sans-serif; margin: 0px;">Search</p></div>
                     </div>
@@ -2370,7 +2370,7 @@
                     </div>
                     <div class="ButtonArtistRightSidebar" style="display: flex; flex-direction: column; border-radius: 5px; margin: 5px;">
                         <div style="height: auto; border-radius: 2px;">
-                            <div style="background-image: url('https://i.pinimg.com/originals/7b/92/7c/7b927cc142382c67933859f1795f6a0e.png'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                            <div class="itemFotoArtis" style="background-image: url('https://i.pinimg.com/originals/7b/92/7c/7b927cc142382c67933859f1795f6a0e.png'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                             <div style="background-color: #1f1f1f; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                 <p style="color: #FFF; margin: 8px 8px 8px 8px; font-size: 13px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;"><i style="color: #378C3F;">Doja Cat Rilis Video MusicPenuh Aksi dalam 'Attention'</i></p>
                                 <p style="color: #FFF; margin: 8px; font-size: 15px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;">DOJA Cat tampil dengan gaya rambut terbaru. Penampilannya begitu memukau dan penuh aksi dalam video musik terbaru "Attention".
@@ -2381,7 +2381,7 @@
                     </div>
                     <div class="ButtonArtistRightSidebar" style="display: flex; flex-direction: column; border-radius: 5px; margin: 5px;">
                         <div style="height: auto; border-radius: 2px;">
-                            <div style="background-image: url('https://i.pinimg.com/564x/37/27/aa/3727aa87282571729fdb39742a84413c.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                            <div class="itemFotoArtis" style="background-image: url('https://i.pinimg.com/564x/37/27/aa/3727aa87282571729fdb39742a84413c.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                             <div style="background-color: #1f1f1f; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                 <p style="color: #FFF; margin: 8px; font-size: 15px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;"><i style="color: #378C3F;">SZA Bantah Isu Persaingan dengan Taylor Swift Demi Puncaki Tangga Lagu Billboard</i></p>
                                 <p style="color: #FFF; margin: 8px; font-size: 13px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;">SZA membantah isu persaingannya dengan Taylor Swift setelah perilisan album mereka. SZA telah merilis album SOS dan Taylor Swift merilis album Midnights pada tahun 2022. Penggemar dari masing-masing penyanyi ini menilai mereka bersaing untuk berada di posisi puncak tangga lagu Billboard. Untuk mengalahkan album SOS, Taylor Swift membagikan empat album digital Midnights berbeda yang menampilkan materi bonus di balik lagu. Sementara itu, SZA merilis album digital dengan sampul berbeda, dan versi solo tambahan dari lagu "PSA" dan "Open Arms".</p>
@@ -2390,7 +2390,7 @@
                     </div>
                     <div class="ButtonArtistRightSidebar" style="display: flex; flex-direction: column; border-radius: 5px; margin: 5px;">
                         <div style="height: auto; border-radius: 2px;">
-                            <div style="background-image: url('https://i.pinimg.com/564x/7e/c6/e5/7ec6e5d322b3321339365fd3ab8bb292.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                            <div class="itemFotoArtis" style="background-image: url('https://i.pinimg.com/564x/7e/c6/e5/7ec6e5d322b3321339365fd3ab8bb292.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                             <div style="background-color: #1f1f1f; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                 <p style="color: #FFF; margin: 8px; font-size: 15px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;"><i style="color: #378C3F;">Doja Cat Diduga Ikut Sekte Illuminati Setelah Tato Punggung</i></p>
                                 <p style="color: #FFF; margin: 8px; font-size: 13px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;">Penyanyi Doja Cat membuat penggemarnya curiga dengan keyakinannya yang dianut saat ini. Lewat tato barunya, banyak orang yang menduga bahwa pelantun Say So itu merupakan bagian dari sekte Illuminati. Wanita dengan nama asli Amala Ratna Sandile Dlamini itu menghebohkan internet setelah menunjukkan tatonya di Instagram pada Jumat (5/5/2023). Dia memamerkan seni tubuh barunya yang menghiasi seluruh punggungnya. Dia memilih tato dengan desain kerangka kelelawar yang menampilkan sayap besar membentang di tulang belikatnya. Salon tato The Shaderoom berbagi sekilas tentang karya seni rumit yang dibuat untuk Doja Cat itu.</p>
@@ -2399,7 +2399,7 @@
                     </div>
                     <div class="ButtonArtistRightSidebar" style="display: flex; flex-direction: column; border-radius: 5px; margin: 5px;">
                         <div style="height: auto; border-radius: 2px;">
-                            <div style="background-image: url('https://i.pinimg.com/originals/df/8a/d5/df8ad5a27a4455ce6518c477a8c5913f.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                            <div class="itemFotoArtis" style="background-image: url('https://i.pinimg.com/originals/df/8a/d5/df8ad5a27a4455ce6518c477a8c5913f.jpg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                             <div style="background-color: #1f1f1f; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                 <p style="color: #FFF; margin: 8px; font-size: 15px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;"><i style="color: #378C3F;">45 Lagu di Film Taylor Swift The Eras Tour</i></p>
                                 <p style="color: #FFF; margin: 8px; font-size: 13px; font-family: 'Poppins', sans-serif; font-weight: bold; text-align: justify;">Taylor Swift: The Eras Tour menjadi sebuah film dokumenter dari konser yang menampilkan performa Taylor Swift. Terutama selama rangkaian konser world tour yang bertajuk The Eras Tour. Dilansir dari detikcom, dokumentasi film ini merangkum konser tur yang digelar di SoFI Stadium, Los Angeles, dan Amerika Serikat pada Agustus 2023 lalu. Konser ini menjadi konser come back Taylor Swift setelah 5 tahun hiatus dari konser sebelumnya yakni Reputation Tour 2018. Film ini digarap langsung oleh Sam Wrench. Film dokumenter ini akan menampilkan performa Taylor Swift yang membawakan setidaknya 45 setlist (daftar lagu-lagu yang dibawakan saat konser) dari 10 album miliknya. Tak seperti nonton bioskop biasa, selama penayangan film ini, penonton dibebaskan bergerak sambil menyanyi bersama Swifties lain seolah-olah merasakan sensasi secara langsung menonton konser The Eras Tour.</p>
@@ -2408,7 +2408,7 @@
                     </div>
                     <div class="ButtonArtistRightSidebar" style="display: flex; flex-direction: column; border-radius: 5px; margin: 5px;">
                         <div style="height: auto; border-radius: 2px;">
-                            <div style="background-image: url('https://rri-assets.s3.ap-southeast-3.amazonaws.com/berita/23/Snapinsta.app_409994015_853779139872103_7046257825073772486_n_1080-min/vn4osbb6sed21sm.jpeg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
+                            <div class="itemFotoArtis" style="background-image: url('https://rri-assets.s3.ap-southeast-3.amazonaws.com/berita/23/Snapinsta.app_409994015_853779139872103_7046257825073772486_n_1080-min/vn4osbb6sed21sm.jpeg'); background-size: cover; background-position: center; width: 100%; height: 150px; border-radius: 5px 5px 0px 0px;"></div>
                             <div style="background-color: #1f1f1f; border-radius: 0px 0px 5px 5px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
                                 <p style="color: #FFF; margin: 8px; font-size: 15px; font-weight: bold; text-align: justify; font-family: 'Poppins', sans-serif;"><i style="color: #378C3F;">Taylor Swift Hingga Billie Eilish Incar Grammy Awards 2024</i></p>
                                 <p style="color: #FFF; margin: 8px; font-size: 13px; font-family: 'Poppins', sans-serif; font-weight: bold; text-align: justify;">Nama-nama seperti Taylor Swift, Olivia Rodrigo, Milley Cyrus, hingga Billie Eilish turut mendapatkan nominasi dalam beberapa kategori. The Recording Academy sendiri merilis 94 kategori dalam 11 fields antara lain General Field yang berisikan kategori Record Of The Year, Album Of The Year, Song Of The Year, Best New Artist, Producer Of The Year Non Classical dan Songwriter Of The Year Non Classical. Selain itu ada 10 fields lainnya seperti Pop & Dance/Electronic Music; Rock, Metal & Alternative Music; R&B, Rap & Spoken Word Poetry; Jazz, Traditional Pop, Contemporary Instrumental & Musical Theater; Country & American Roots Music; Gospel & Contemporary Christian Music; Latin, Global, Reggae & New Age, Ambient, or Chant; Childre's, Comedy, Audio Books, Visual Media & Music Video/Film; Package, Notes & Historical dan Production, Engineering, Composition & Arrangement.</p>
@@ -2419,7 +2419,7 @@
             </div>
         </div>
     </div>
-    <footer style="background-color: #121212; display: flex; position: sticky; bottom: 0; z-index: 999;">
+    <footer style="background-color: #121212; display: flex; position: fixed; width: 100%; bottom: 0; z-index: 999;">
         <nav style="height: 12vh; display: flex; align-items: center; width: 100%;">
             <div style="display: flex; justify-content:flex-start; margin: 10px; width: 100%;">
                 <div>
@@ -2632,6 +2632,7 @@
             let FotoFooter = document.getElementById('IdPhotoFooter')
             let PFooter1 = document.getElementById('IdPFooter')
             let PFooter2 = document.getElementById('IdAudioSource')
+            let Lyrics = document.getElementById('MarqueeLyrics')
 
             if(Demons == "DriversLicense"){
                 FotoSidebarKiri1.src = "https://i.pinimg.com/originals/cc/ca/5c/ccca5c1d778a1ab6a8b848b190160b26.jpg";
@@ -2658,6 +2659,51 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Olivia Rodrigo<br/><i>Drivers License</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/OliviaRodrigoDriversLicense.mpeg";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                        <p class='Lyrics'>I got my driver's license last week</p>\
+                        <p class='Lyrics'>Just like we always talked about</p>\
+                        <p class='Lyrics'>'Cause you were so excited for me</p>\
+                        <p class='Lyrics'>To finally drive up to your house</p>\
+                        <p class='Lyrics'>But today I drove through the suburbs</p>\
+                        <p class='Lyrics'>Cryin' 'cause you weren't around</p>\
+                        <p class='Lyrics'>And you're probably with that blonde girl</p>\
+                        <p class='Lyrics'>Who always made me doubt</p>\
+                        <p class='Lyrics'>She's so much older than me</p>\
+                        <p class='Lyrics'>She's everything I'm insecure about</p>\
+                        <p class='Lyrics'>Yeah, today I drove through the suburbs</p>\
+                        <p class='Lyrics'>'Cause how could I ever love someone else?</p>\
+                        <p class='Lyrics'>And I know we weren't perfect but I've never felt this way for no one</p>\
+                        <p class='Lyrics'>And I just can't imagine how you could be so okay now that I'm gone</p>\
+                        <p class='Lyrics'>Guess you didn't mean what you wrote in that song about me</p>\
+                        <p class='Lyrics'>'Cause you said forever, now I drive alone past your street</p>\
+                        <p class='Lyrics'>And all my friends are tired</p>\
+                        <p class='Lyrics'>Of hearing how much I miss you, but</p>\
+                        <p class='Lyrics'>I kinda feel sorry for them</p>\
+                        <p class='Lyrics'>'Cause they'll never know you the way that I do, yeah</p>\
+                        <p class='Lyrics'>Today I drove through the suburbs</p>\
+                        <p class='Lyrics'>And pictured I was driving home to you</p>\
+                        <p class='Lyrics'>And I know we weren't perfect</p>\
+                        <p class='Lyrics'>But I've never felt this way for no one, oh</p>\
+                        <p class='Lyrics'>And I just can't imagine how you could be so okay now that I'm gone</p>\
+                        <p class='Lyrics'>I guess you didn't mean what you wrote in that song about me</p>\
+                        <p class='Lyrics'>'Cause you said forever, now I drive alone past your street</p>\
+                        <p class='Lyrics'>Red lights, stop signs</p>\
+                        <p class='Lyrics'>I still see your face in the white cars, front yards</p>\
+                        <p class='Lyrics'>Can't drive past the places we used to go to</p>\
+                        <p class='Lyrics'>'Cause I still fuckin' love you, babe (ooh, ooh, ooh, ooh)</p>\
+                        <p class='Lyrics'>Sidewalks we crossed</p>\
+                        <p class='Lyrics'>I still hear your voice in the traffic, we're laughing</p>\
+                        <p class='Lyrics'>Over all the noise</p>\
+                        <p class='Lyrics'>God, I'm so blue, know we're through</p>\
+                        <p class='Lyrics'>But I still fuckin' love you, babe (ooh, ooh, ooh, ooh)</p>\
+                        <p class='Lyrics'>I know we weren't perfect but I've never felt this way for no one</p>\
+                        <p class='Lyrics'>And I just can't imagine how you could be so okay now that I'm gone</p>\
+                        <p class='Lyrics'>'Cause you didn't mean what you wrote in that song about me</p>\
+                        <p class='Lyrics'>'Cause you said forever, now I drive alone past your street</p>\
+                        <p class='Lyrics'>Yeah, you said forever, now I drive alone past your street</p>\
+                    </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2686,6 +2732,59 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Olivia Rodrigo<br/><i>Deja Vu</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/OliviaRodrigoDejaVu.mpeg";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                <p class='Lyrics'>Car rides to Malibu</p>\
+                <p class='Lyrics'>Strawberry ice cream</p>\
+                <p class='Lyrics'>One spoon for two</p>\
+                <p class='Lyrics'>And trading jackets</p>\
+                <p class='Lyrics'>Laughing 'bout how small it looks on you</p>\
+                <p class='Lyrics'>(Ha-ha-ha-ha, ha-ha-ha-ha, ha-ha-ha-ha)</p>\
+                <p class='Lyrics'>Watching reruns of Glee</p>\
+                <p class='Lyrics'>Being annoying</p>\
+                <p class='Lyrics'>Singing in harmony</p>\
+                <p class='Lyrics'>I bet she's bragging</p>\
+                <p class='Lyrics'>To all her friends, saying you're so unique, hmm</p>\
+                <p class='Lyrics'>So when you gonna tell her</p>\
+                <p class='Lyrics'>That we did that, too?</p>\
+                <p class='Lyrics'>She thinks it's special</p>\
+                <p class='Lyrics'>But it's all reused</p>\
+                <p class='Lyrics'>That was our place, I found it first</p>\
+                <p class='Lyrics'>I made the jokes you tell to her when she's with you</p>\
+                <p class='Lyrics'>Do you get déjà vu when she's with you?</p>\
+                <p class='Lyrics'>Do you get déjà vu? (Ah), hmm</p>\
+                <p class='Lyrics'>Do you get déjà vu, huh?</p>\
+                <p class='Lyrics'>Do you call her</p>\
+                <p class='Lyrics'>Almost say my name?</p>\
+                <p class='Lyrics'>'Cause let's be honest</p>\
+                <p class='Lyrics'>We kinda do sound the same</p>\
+                <p class='Lyrics'>Another actress</p>\
+                <p class='Lyrics'>I hate to think that I was just your type</p>\
+                <p class='Lyrics'>I'll bet that she knows Billy Joel</p>\
+                <p class='Lyrics'>'Cause you played her 'Uptown Girl'</p>\
+                <p class='Lyrics'>You're singing it together</p>\
+                <p class='Lyrics'>Now I bet you even tell her</p>\
+                <p class='Lyrics'>How you love her</p>\
+                <p class='Lyrics'>In between the chorus and the verse (ooh) (I love you)</p>\
+                <p class='Lyrics'>So when you gonna tell her</p>\
+                <p class='Lyrics'>That we did that, too?</p>\
+                <p class='Lyrics'>She thinks it's special</p>\
+                <p class='Lyrics'>But it's all reused</p>\
+                <p class='Lyrics'>That was the show we talked about</p>\
+                <p class='Lyrics'>Played you the song she's singing now when she's with you</p>\
+                <p class='Lyrics'>Do you get déjà vu when she's with you?</p>\
+                <p class='Lyrics'>Do you get déjà vu? Oh</p>\
+                <p class='Lyrics'>Do you get déjà vu?</p>\
+                <p class='Lyrics'>Strawberry ice cream in Malibu</p>\
+                <p class='Lyrics'>Don't act like we didn't do that shit, too</p>\
+                <p class='Lyrics'>You're trading jackets like we used to do</p>\
+                <p class='Lyrics'>(Yeah, everything is all reused)</p>\
+                <p class='Lyrics'>Play her piano, but she doesn't know (oh, oh)</p>\
+                <p class='Lyrics'>That I was the one who taught you Billy Joel (oh)</p>\
+                <p class='Lyrics'>A different girl now, but there's nothing new</p>\
+                <p class='Lyrics'>(I know you get déjà vu)</p>\
+                </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2714,6 +2813,62 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Taylor Swift<br/><i>Enchanted (Taylor's Version)</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Taylor_Swift_-_Enchanted_(Taylor's_Version)_(Lyric_Video)_MP3_256kbps_256k.mp3";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                <p class='Lyrics'>There I was again tonight</p>\
+                <p class='Lyrics'>Forcing laughter, faking smiles</p>\
+                <p class='Lyrics'>Same old tired, lonely place</p>\
+                <p class='Lyrics'>Walls of insincerity, shifting eyes and vacancy</p>\
+                <p class='Lyrics'>Vanished when I saw your face</p>\
+                <p class='Lyrics'>All I can say is, it was enchanting to meet you</p>\
+                <p class='Lyrics'>Your eyes whispered, 'Have we met?'</p>\
+                <p class='Lyrics'>'Cross the room your silhouette</p>\
+                <p class='Lyrics'>Starts to make its way to me</p>\
+                <p class='Lyrics'>The playful conversation starts</p>\
+                <p class='Lyrics'>Counter all your quick remarks</p>\
+                <p class='Lyrics'>Like passing notes in secrecy</p>\
+                <p class='Lyrics'>And it was enchanting to meet you</p>\
+                <p class='Lyrics'>All I can say is, I was enchanted to meet you</p>\
+                <p class='Lyrics'>This night is sparkling, don't you let it go</p>\
+                <p class='Lyrics'>I'm wonderstruck, blushing all the way home</p>\
+                <p class='Lyrics'>I'll spend forever wondering if you knew</p>\
+                <p class='Lyrics'>I was enchanted to meet you</p>\
+                <p class='Lyrics'>The lingering question kept me up</p>\
+                <p class='Lyrics'>2 AM, who do you love?</p>\
+                <p class='Lyrics'>I wonder 'til I'm wide awake</p>\
+                <p class='Lyrics'>And now I'm pacing back and forth</p>\
+                <p class='Lyrics'>Wishing you were at my door</p>\
+                <p class='Lyrics'>I'd open up and you would say, 'Hey'</p>\
+                <p class='Lyrics'>It was enchanting to meet you</p>\
+                <p class='Lyrics'>All I know is, I was enchanted to meet you</p>\
+                <p class='Lyrics'>This night is sparkling, don't you let it go</p>\
+                <p class='Lyrics'>I'm wonderstruck, blushing all the way home</p>\
+                <p class='Lyrics'>I'll spend forever wondering if you knew</p>\
+                <p class='Lyrics'>That this night is flawless, don't you let it go</p>\
+                <p class='Lyrics'>I'm wonderstruck, dancing around all alone</p>\
+                <p class='Lyrics'>I'll spend forever wondering if you knew</p>\
+                <p class='Lyrics'>I was enchanted to meet you</p>\
+                <p class='Lyrics'>This is me praying that</p>\
+                <p class='Lyrics'>This was the very first page</p>\
+                <p class='Lyrics'>Not where the story line ends</p>\
+                <p class='Lyrics'>My thoughts will echo your name, until I see you again</p>\
+                <p class='Lyrics'>These are the words I held back, as I was leaving too soon</p>\
+                <p class='Lyrics'>I was enchanted to meet you</p>\
+                <p class='Lyrics'>Please don't be in love with someone else</p>\
+                <p class='Lyrics'>Please don't have somebody waiting on you</p>\
+                <p class='Lyrics'>Please don't be in love with someone else</p>\
+                <p class='Lyrics'>Please don't have somebody waiting on you</p>\
+                <p class='Lyrics'>This night is sparkling, don't you let it go</p>\
+                <p class='Lyrics'>I'm wonderstruck, blushing all the way home</p>\
+                <p class='Lyrics'>I'll spend forever wondering if you knew</p>\
+                <p class='Lyrics'>This night is flawless, don't you let it go</p>\
+                <p class='Lyrics'>I'm wonderstruck, dancing around all alone</p>\
+                <p class='Lyrics'>I'll spend forever wondering if you knew</p>\
+                <p class='Lyrics'>I was enchanted to meet you</p>\
+                <p class='Lyrics'>Please don't be in love with someone else</p>\
+                <p class='Lyrics'>Please don't have somebody waiting on you</p>\
+                </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2742,6 +2897,91 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Agora Hills</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Agora_Hills_MP3_256kbps_256k.mp3";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                <p class='Lyrics'>Yeah, yeah</p>\
+                <p class='Lyrics'>Kissing, I hope they caught us</p>\
+                <p class='Lyrics'>Whether they like or not (not)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna brag about it (yeah)</p>\
+                <p class='Lyrics'>I wanna tie the knot (knot)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (off), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (yeah), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you</p>\
+                <p class='Lyrics'>Hold my hand</p>\
+                <p class='Lyrics'>You can hit while they watch, boy</p>\
+                <p class='Lyrics'>Somethin' different about you</p>\
+                <p class='Lyrics'>Love it when he hit and smack too</p>\
+                <p class='Lyrics'>Baby, lemme lick on your tattoos</p>\
+                <p class='Lyrics'>That's true that I like PDA</p>\
+                <p class='Lyrics'>Take it to a seedy place</p>\
+                <p class='Lyrics'>Suck a little dick in the bathroom</p>\
+                <p class='Lyrics'>Who that man with the big strong hands</p>\
+                <p class='Lyrics'>On her ass in the club with the paps? Baby, that's you</p>\
+                <p class='Lyrics'>Front seat chillin' with the window down</p>\
+                <p class='Lyrics'>I be ten toes down on the dash getting' fast food</p>\
+                <p class='Lyrics'>Hope you can handle the heat</p>\
+                <p class='Lyrics'>Put your name in the streets</p>\
+                <p class='Lyrics'>Get used to my fans looking at you</p>\
+                <p class='Lyrics'>Fuck what they heard, I don't fuck with them birds</p>\
+                <p class='Lyrics'>I'm a mean kitty, don't get stabbed with the rat tooth</p>\
+                <p class='Lyrics'>Boys be mad that I don't fuck incels</p>\
+                <p class='Lyrics'>Girls hate too, gun to their pigtail</p>\
+                <p class='Lyrics'>I love you, I wanna big chill</p>\
+                <p class='Lyrics'>Boy, don't trip, I'll split a big bill</p>\
+                <p class='Lyrics'>Take you 'round the world, they don't have to understand</p>\
+                <p class='Lyrics'>Rub it in their face, put a rock on her hand</p>\
+                <p class='Lyrics'>Kissing, I hope they caught us</p>\
+                <p class='Lyrics'>Whether they like or not (not)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna brag about it (yeah)</p>\
+                <p class='Lyrics'>I wanna tie the knot (knot)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (off), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (yeah), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you</p>\
+                <p class='Lyrics'>Hold my hand</p>\
+                <p class='Lyrics'>You can hit while they watch, boy</p>\
+                <p class='Lyrics'>'Cause love is pain but I need this shit (yeah)</p>\
+                <p class='Lyrics'>We fuck too good when the bean kicks in</p>\
+                <p class='Lyrics'>Like Fortnite, I'ma need your skin (yeah)</p>\
+                <p class='Lyrics'>Don't give a fuck where the penis been (uh)</p>\
+                <p class='Lyrics'>Boy, you're the one, you're the only man</p>\
+                <p class='Lyrics'>Me and you on my OnlyFans (come on)</p>\
+                <p class='Lyrics'>Holy cow, you're the Holy Trin' (Trin')</p>\
+                <p class='Lyrics'>Hold me down when a hole need dick</p>\
+                <p class='Lyrics'>Be my security, it's your therapy</p>\
+                <p class='Lyrics'>With you I ain't holding shit back</p>\
+                <p class='Lyrics'>When I need my space, you give that</p>\
+                <p class='Lyrics'>When he broke my heart, you fixed that</p>\
+                <p class='Lyrics'>With a long walk on the beach</p>\
+                <p class='Lyrics'>Love it when they honk-honk on the street</p>\
+                <p class='Lyrics'>When they see us zoom by in the Jeep</p>\
+                <p class='Lyrics'>We a whole damn joint, we an energy</p>\
+                <p class='Lyrics'>Baby, we could just ride on our enemies</p>\
+                <p class='Lyrics'>They all wanna know how you get to me</p>\
+                <p class='Lyrics'>Let 'em feel how they feel and be Philistines</p>\
+                <p class='Lyrics'>'Cause this type of love's the epitome, said</p>\
+                <p class='Lyrics'>Kissing, I hope they caught us</p>\
+                <p class='Lyrics'>Whether they like or not (not)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna brag about it (yeah)</p>\
+                <p class='Lyrics'>I wanna tie the knot (knot)</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (off), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you (yeah), yeah, yeah</p>\
+                <p class='Lyrics'>I wanna show you off (off), I wanna show you off (off)</p>\
+                <p class='Lyrics'>I wanna show you</p>\
+                <p class='Lyrics'>Hold my hand</p>\
+                <p class='Lyrics'>You can hit while they watch, boy</p>\
+                </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2770,6 +3010,81 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Vegas</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Vegas_(From_the_Original_Motion_Picture_Soundtrack_ELVIS)_(Audio)_MP3_256kbps_256k.mp3";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey, ahw, get it, ye</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey</p>\
+                    <p class='Lyrics'>You ain't nothing but a-</p>\
+                    <p class='Lyrics'>Dog, player, I get it</p>\
+                    <p class='Lyrics'>Fraud, player, I get it</p>\
+                    <p class='Lyrics'>I understand, I understand</p>\
+                    <p class='Lyrics'>You ain't the man, you ain't a man (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Hound dog, hound dog, hound dog</p>\
+                    <p class='Lyrics'>You ain't nothing but a-</p>\
+                    <p class='Lyrics'>Player getting valeted 'round in that whole whip</p>\
+                    <p class='Lyrics'>Two fingers, set one down on my toes ten</p>\
+                    <p class='Lyrics'>Fueled out with my boobs out, put a cork in it</p>\
+                    <p class='Lyrics'>Love it when you be crying out when I'm corseted</p>\
+                    <p class='Lyrics'>I don't think you gon' make it, do not let me start raging</p>\
+                    <p class='Lyrics'>I'm losing my patience, this ain't staying in Vegas (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>There's more sides to the story, I'ma tell everybody</p>\
+                    <p class='Lyrics'>Had your ass sitting courtside with your arm around me</p>\
+                    <p class='Lyrics'>Had your ass sitting first class with your burnt ass out in Abu Dhabi</p>\
+                    <p class='Lyrics'>Could've been what we should've been, but you lost a bet, now you gotta find me</p>\
+                    <p class='Lyrics'>Find a seat</p>\
+                    <p class='Lyrics'>I ain't playing this hide and seek</p>\
+                    <p class='Lyrics'>High school when you finally peaked</p>\
+                    <p class='Lyrics'>Hound dog, come find a treat</p>\
+                    <p class='Lyrics'>I'm a bad bitch, but (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Dog, player, I get it</p>\
+                    <p class='Lyrics'>Fraud, player, I get it</p>\
+                    <p class='Lyrics'>I understand, I understand</p>\
+                    <p class='Lyrics'>You ain't the man, you ain't a man (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Hound dog, hound dog, hound dog</p>\
+                    <p class='Lyrics'>Yeah, yeah, said (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>I get it, I know you got some other- you wanted</p>\
+                    <p class='Lyrics'>I get it, you needed someone that could prove you wrong</p>\
+                    <p class='Lyrics'>So I reckon, you leave all of your problems at the door to my city</p>\
+                    <p class='Lyrics'>You gon' need to tell my brothers where you from</p>\
+                    <p class='Lyrics'>And I admit it, I still got empathy</p>\
+                    <p class='Lyrics'>And you gon' feel it for two weeks</p>\
+                    <p class='Lyrics'>When I release you in them sheets (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>And keep my meaning discreet</p>\
+                    <p class='Lyrics'>Keep the cleaning my gym</p>\
+                    <p class='Lyrics'>And put that Yeezy in your teeth</p>\
+                    <p class='Lyrics'>Let my demons off their leashes</p>\
+                    <p class='Lyrics'>If you even think to speak</p>\
+                    <p class='Lyrics'>I'ma give a whole new meaning</p>\
+                    <p class='Lyrics'>When you said you living a dream</p>\
+                    <p class='Lyrics'>We can keep that- asleep</p>\
+                    <p class='Lyrics'>And you gon' laugh with all your G's</p>\
+                    <p class='Lyrics'>Count them sheep, sheep, sheep, sheep</p>\
+                    <p class='Lyrics'>Talking 'bout Z-Z-Z-Z-Z-Z-Z, R.I.P. (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Dog, player, I get it</p>\
+                    <p class='Lyrics'>Fraud, player, I get it</p>\
+                    <p class='Lyrics'>I understand, I understand</p>\
+                    <p class='Lyrics'>You ain't the man, you ain't a man (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Hound dog, hound dog, hound dog</p>\
+                    <p class='Lyrics'>You ain't nothing but a-</p>\
+                    <p class='Lyrics'>Dog, player, I get it</p>\
+                    <p class='Lyrics'>Fraud, player, I get it</p>\
+                    <p class='Lyrics'>I understand, I understand</p>\
+                    <p class='Lyrics'>You ain't the man, you ain't a man (you ain't nothing but a-)</p>\
+                    <p class='Lyrics'>Hound dog, hound dog, hound dog</p>\
+                    <p class='Lyrics'>You ain't nothing but a-</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey, ahw, get it, ye</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey, ahw, get it, ye</p>\
+                    <p class='Lyrics'>Hey, ahw, get it</p>\
+                    <p class='Lyrics'>Hey</p>\
+                    <p class='Lyrics'>You ain't nothing but a-</p>\
+                    </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2798,6 +3113,91 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Katy Perry<br/><i>The One That Got Away</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Katy_Perry_-_The_One_That_Got_Away_(Official_Music_Video)_MP3_256kbps_256k.mp3";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>You know it's crazy, 'cause nights like this</p>\
+                    <p class='Lyrics'>Would start out with a little private party</p>\
+                    <p class='Lyrics'>You sneak me in your mom's house</p>\
+                    <p class='Lyrics'>I know I mighta spilled my drink, but</p>\
+                    <p class='Lyrics'>Really wasn't tryin' to spill my heart out</p>\
+                    <p class='Lyrics'>I mean it started as a conversation</p>\
+                    <p class='Lyrics'>I was really tryin' to get my thoughts out</p>\
+                    <p class='Lyrics'>But then we make moves and we make plans</p>\
+                    <p class='Lyrics'>Had the whole thing mapped out</p>\
+                    <p class='Lyrics'>See, you were gonna go to college</p>\
+                    <p class='Lyrics'>And to pay for bills I'd figure the job out</p>\
+                    <p class='Lyrics'>And you knew I had to say it, but them day's gone</p>\
+                    <p class='Lyrics'>Now I moved on and you switched phones</p>\
+                    <p class='Lyrics'>Hopefully reincarnation will bring us back to the place we belong</p>\
+                    <p class='Lyrics'>Summer after high school when we first met</p>\
+                    <p class='Lyrics'>We make out in your Mustang to Radiohead</p>\
+                    <p class='Lyrics'>And on my 18th birthday we got matching tattoos</p>\
+                    <p class='Lyrics'>Used to steal your parents' liquor and climb to the roof</p>\
+                    <p class='Lyrics'>Talk about our future like we had a clue</p>\
+                    <p class='Lyrics'>Never planned that one day, I'd be losing you</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would be your girl</p>\
+                    <p class='Lyrics'>We keep all our promises</p>\
+                    <p class='Lyrics'>Be us against the world</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would make you stay</p>\
+                    <p class='Lyrics'>So I don't have to say</p>\
+                    <p class='Lyrics'>You were the one that got away</p>\
+                    <p class='Lyrics'>The one that got away</p>\
+                    <p class='Lyrics'>I was June and you were my Johnny Cash</p>\
+                    <p class='Lyrics'>Never one without the other we made a pact</p>\
+                    <p class='Lyrics'>Sometimes when I miss you</p>\
+                    <p class='Lyrics'>I put those records on</p>\
+                    <p class='Lyrics'>Someone said you had your tattoo removed</p>\
+                    <p class='Lyrics'>Saw you downtown singing the blues</p>\
+                    <p class='Lyrics'>Its time to face the music</p>\
+                    <p class='Lyrics'>I'm no longer your muse</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would be your girl</p>\
+                    <p class='Lyrics'>We keep all our promises</p>\
+                    <p class='Lyrics'>Be us against the world</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would make you stay</p>\
+                    <p class='Lyrics'>So I don't have to say</p>\
+                    <p class='Lyrics'>You were the one that got away</p>\
+                    <p class='Lyrics'>The one that got away</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>The one that got away</p>\
+                    <p class='Lyrics'>I'm falling for you like dominoes</p>\
+                    <p class='Lyrics'>From the top of the hundredth floor</p>\
+                    <p class='Lyrics'>Look out below Geronimo</p>\
+                    <p class='Lyrics'>Tryin' to get behind the closed doors to your soul</p>\
+                    <p class='Lyrics'>Why'd you have to end the show</p>\
+                    <p class='Lyrics'>We had such a beautiful plot</p>\
+                    <p class='Lyrics'>There was still more story to go</p>\
+                    <p class='Lyrics'>Now look, I'm not insinuating that</p>\
+                    <p class='Lyrics'>You're some type of fair weather player</p>\
+                    <p class='Lyrics'>But even if the whole world falls over</p>\
+                    <p class='Lyrics'>I wouldn't be aware of a glacier</p>\
+                    <p class='Lyrics'>I just wanna see you wake up</p>\
+                    <p class='Lyrics'>Doing your hair in the mirror with your makeup</p>\
+                    <p class='Lyrics'>Then, maybe in the next lifetime we could make up</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would be your girl</p>\
+                    <p class='Lyrics'>We keep all our promises</p>\
+                    <p class='Lyrics'>Be us against the world</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would make you stay</p>\
+                    <p class='Lyrics'>So I don't have to say</p>\
+                    <p class='Lyrics'>You were the one that got away</p>\
+                    <p class='Lyrics'>The one that got away</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>The o-o-o-o-o-one</p>\
+                    <p class='Lyrics'>In another life</p>\
+                    <p class='Lyrics'>I would make you stay</p>\
+                    <p class='Lyrics'>So I don't have to say</p>\
+                    <p class='Lyrics'>You were the one that got away</p>\
+                    <p class='Lyrics'>The one that got away</p>\
+                    </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2825,6 +3225,41 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Amy Winehouse<br/><i>Back To Black</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>He left no time to regret</p>\
+                    <p class='Lyrics'>Kept his dick wet</p>\
+                    <p class='Lyrics'>With his same old safe bet</p>\
+                    <p class='Lyrics'>Me and my head high</p>\
+                    <p class='Lyrics'>And my tears dry</p>\
+                    <p class='Lyrics'>Get on without my guy</p>\
+                    <p class='Lyrics'>You went back to what you knew</p>\
+                    <p class='Lyrics'>So far removed</p>\
+                    <p class='Lyrics'>From all that we went through</p>\
+                    <p class='Lyrics'>And I tread a troubled track</p>\
+                    <p class='Lyrics'>My odds are stacked</p>\
+                    <p class='Lyrics'>I'll go back to black</p>\
+                    <p class='Lyrics'>We only said goodbye with words</p>\
+                    <p class='Lyrics'>I died a hundred times</p>\
+                    <p class='Lyrics'>You go back to her</p>\
+                    <p class='Lyrics'>And I go back to</p>\
+                    <p class='Lyrics'>I go back to us</p>\
+                    <p class='Lyrics'>I love you much</p>\
+                    <p class='Lyrics'>It's not enough</p>\
+                    <p class='Lyrics'>You love blow and I love puff</p>\
+                    <p class='Lyrics'>And life is like a pipe</p>\
+                    <p class='Lyrics'>And I'm a tiny penny</p>\
+                    <p class='Lyrics'>Rolling up the walls inside</p>\
+                    <p class='Lyrics'>We only said goodbye with words</p>\
+                    <p class='Lyrics'>I died a hundred times</p>\
+                    <p class='Lyrics'>You go back to her</p>\
+                    <p class='Lyrics'>And I go back to</p>\
+                    <p class='Lyrics'>We only said goodbye with words</p>\
+                    <p class='Lyrics'>I died a hundred times</p>\
+                    <p class='Lyrics'>You go back to her</p>\
+                    <p class='Lyrics'>And I go back to black</p>\
+                    </marquee>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Back_To_Black_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -2853,6 +3288,54 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Nicki Minaj<br/><i>FTCU</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>(ATL Jacob, he a fuckin' millionaire) yeah</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (yeah, yeah, yeah-yeah) (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (yeah, yeah-yeah) (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (yeah, yeah-yeah) (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Ayo, I tell 'em that I'm the Sleeze, they tellin' me, 'Okay, prove it'</p>\
+                    <p class='Lyrics'>I leave these bitches on read, so now they know that they blew it</p>\
+                    <p class='Lyrics'>I tell 'em I'm movin' units, my videos, they gon' view it</p>\
+                    <p class='Lyrics'>Spotify ain't gotta lie, they really streamin' my music (woo, woo)</p>\
+                    <p class='Lyrics'>I give bitches the crown, they fuck around and lose it, nah (nah)</p>\
+                    <p class='Lyrics'>I am the wave, I only wave when I'm tellin' 'em bye (bye)</p>\
+                    <p class='Lyrics'>Bitch, we ain't twinnin', ain't fraternal or identical (cal)</p>\
+                    <p class='Lyrics'>When I'm around, bitch, you know you become invisible (-ble)</p>\
+                    <p class='Lyrics'>Mm, who wanna play with Nicki?</p>\
+                    <p class='Lyrics'>Got the power, I could tell my niggas, 'Spray like 50' (brr)</p>\
+                    <p class='Lyrics'>Come on, bitch, I just put a milli' on my Richie</p>\
+                    <p class='Lyrics'>Minus like 50, mine was 950, sissy</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Fuck this club up, fuck this, fuck this club up (Flocka)</p>\
+                    <p class='Lyrics'>Yeah, high heels on my tippies</p>\
+                    <p class='Lyrics'>Dolce and Gabbana, that's on my titties</p>\
+                    <p class='Lyrics'>Cop me Vetements when I ride the dickie</p>\
+                    <p class='Lyrics'>I still got the juice, bitch, buy a sippie</p>\
+                    <p class='Lyrics'>I will never slippy like a Mickey</p>\
+                    <p class='Lyrics'>Stay in your Tory lane, bitch, I'm not Iggy</p>\
+                    <p class='Lyrics'>I (I) know that these niggas tryna bang like Chiddy</p>\
+                    <p class='Lyrics'>I am such a catch nigga, throw on ya mitty</p>\
+                    <p class='Lyrics'>Uh, who wanna play with Nicki?</p>\
+                    <p class='Lyrics'>Got the power, I could tell my niggas, 'Spray like 50'</p>\
+                    <p class='Lyrics'>Distribute about a million dollars, word to brickies</p>\
+                    <p class='Lyrics'>Told 'em to keep 50, my cut 950, bitchy</p>\
+                    <p class='Lyrics'>Mm, give me my tens</p>\
+                    <p class='Lyrics'>Give me, give me my tens</p>\
+                    <p class='Lyrics'>Give me my tens</p>\
+                    <p class='Lyrics'>Then take away two, I ate, I win (win)</p>\
+                    <p class='Lyrics'>Mm, give me my tens</p>\
+                    <p class='Lyrics'>Give me, give me my tens</p>\
+                    <p class='Lyrics'>Give me my tens</p>\
+                    <p class='Lyrics'>Then take away two, I ate it up again (-gain)</p>\
+                    </marquee>\
+                    "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/FTCU_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -2882,6 +3365,60 @@
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Taylor Swift<br/><i>You're On Your Own, Kid</i></font></p>\
                 ";
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Taylor_Swift_-_You're_On_Your_Own%2C_Kid_(Official_Lyric_Video)_MP3_256kbps_256k.mp3";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>Summer went away</p>\
+                    <p class='Lyrics'>Still, the yearning stays</p>\
+                    <p class='Lyrics'>I play it cool with the best of them</p>\
+                    <p class='Lyrics'>I wait patiently</p>\
+                    <p class='Lyrics'>He's gonna notice me</p>\
+                    <p class='Lyrics'>It's okay, we're the best of friends</p>\
+                    <p class='Lyrics'>Anyway</p>\
+                    <p class='Lyrics'>I hear it in your voice</p>\
+                    <p class='Lyrics'>You're smoking with your boys</p>\
+                    <p class='Lyrics'>I touch my phone as if it's your face</p>\
+                    <p class='Lyrics'>I didn't choose this town</p>\
+                    <p class='Lyrics'>I dream of getting out</p>\
+                    <p class='Lyrics'>There's just one who could make me stay</p>\
+                    <p class='Lyrics'>All my days</p>\
+                    <p class='Lyrics'>From sprinkler splashes to fireplace ashes</p>\
+                    <p class='Lyrics'>I waited ages to see you there</p>\
+                    <p class='Lyrics'>I search the party of better bodies</p>\
+                    <p class='Lyrics'>Just to learn that you never cared</p>\
+                    <p class='Lyrics'>You're on your own, kid</p>\
+                    <p class='Lyrics'>You always have been</p>\
+                    <p class='Lyrics'>I see the great escape</p>\
+                    <p class='Lyrics'>So long, Daisy May</p>\
+                    <p class='Lyrics'>I picked the petals, he loves me not</p>\
+                    <p class='Lyrics'>Something different bloomed</p>\
+                    <p class='Lyrics'>Writing in my room</p>\
+                    <p class='Lyrics'>I play my songs in the parking lot</p>\
+                    <p class='Lyrics'>I'll run away</p>\
+                    <p class='Lyrics'>From sprinkler splashes to fireplace ashes</p>\
+                    <p class='Lyrics'>I called a taxi to take me there</p>\
+                    <p class='Lyrics'>I search the party of better bodies</p>\
+                    <p class='Lyrics'>Just to learn that my dreams aren't rare</p>\
+                    <p class='Lyrics'>You're on your own, kid</p>\
+                    <p class='Lyrics'>You always have been</p>\
+                    <p class='Lyrics'>From sprinkler splashes to fireplace ashes</p>\
+                    <p class='Lyrics'>I gave my blood, sweat, and tears for this</p>\
+                    <p class='Lyrics'>I hosted parties and starved my body</p>\
+                    <p class='Lyrics'>Like I'd be saved by a perfect kiss</p>\
+                    <p class='Lyrics'>The jokes weren't funny, I took the money</p>\
+                    <p class='Lyrics'>My friends from home don't know what to say</p>\
+                    <p class='Lyrics'>I looked around in a blood-soaked gown</p>\
+                    <p class='Lyrics'>And I saw something they can't take away</p>\
+                    <p class='Lyrics'>'Cause there were pages turned with the bridges burned</p>\
+                    <p class='Lyrics'>Everything you lose is a step you take</p>\
+                    <p class='Lyrics'>So make the friendship bracelets</p>\
+                    <p class='Lyrics'>Take the moment and taste it</p>\
+                    <p class='Lyrics'>You've got no reason to be afraid</p>\
+                    <p class='Lyrics'>You're on your own, kid</p>\
+                    <p class='Lyrics'>Yeah, you can face this</p>\
+                    <p class='Lyrics'>You're on your own, kid</p>\
+                    <p class='Lyrics'>You always have been</p>\
+                    </marquee>\
+                "
                 setTimeout(() => {
                     PFooter2.play()
                 },1000)
@@ -2909,6 +3446,32 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Nicki Minaj<br/><i>Beep Beep</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <marquee style='height: 70vh; max-height: 70vh;' onmouseover='this.stop()' onmouseout='this.start()' behavior='scroll' direction='up' scrollamount='2'>\
+                    <p class='Lyrics'>Ayo</p>\
+                    <p class='Lyrics'>I drop a bag on a Rolls with the temp tags</p>\
+                    <p class='Lyrics'>My niggas locked, scammin' money out their pen pals</p>\
+                    <p class='Lyrics'>I know a bitch bust it open in the club</p>\
+                    <p class='Lyrics'>Introduce you to the plug, ten plates for like ten cash</p>\
+                    <p class='Lyrics'>I got the call, told him, 'Meet me in the backstreets'</p>\
+                    <p class='Lyrics'>Got out the Jeep just to fuck him in the backseat</p>\
+                    <p class='Lyrics'>I'm not impressed, I say, 'Yo, the D mad weak'</p>\
+                    <p class='Lyrics'>Hit my niggas up, I got him robbed and that ass beat</p>\
+                    <p class='Lyrics'>I told him that he had the chance of a lifetime</p>\
+                    <p class='Lyrics'>Who wanna be a millionaire? I'm your lifeline</p>\
+                    <p class='Lyrics'>These bitches always checkin' for me like a Nike sign</p>\
+                    <p class='Lyrics'>Niggas always frontin' when they only did some light time</p>\
+                    <p class='Lyrics'>Beep, beep, beep, is that bleep?</p>\
+                    <p class='Lyrics'>Is that you talkin' to me? It's that deep?</p>\
+                    <p class='Lyrics'>If I don't even know you exist, is that beef?</p>\
+                    <p class='Lyrics'>When niggas get their jaw broke, wait, is that teeth?</p>\
+                    <p class='Lyrics'>Murda, murda, murda, murda, mm (murda)</p>\
+                    <p class='Lyrics'>Murda, murda, murda, murda, mm (murda)</p>\
+                    <p class='Lyrics'>Murda, murda, murda, murda, mm (murda)</p>\
+                    <p class='Lyrics'>Murda, murda, murda, murda, mm (murda)</p>\
+                    <p class='Lyrics'>Wait, is that teeth?</p>\
+                    </marquee>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Beep_Beep_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -2937,6 +3500,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA<br/><i>Kill BIll</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_Kill_Bill_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -2965,6 +3535,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA<br/><i>Snooze</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_Snooze_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -2988,6 +3565,13 @@
                         <div style='font-weight: bold; font-size: 13px; color: #378C3F; font-style: italic;'>Producer</div>\
                     </div>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PSidebarKiri7.innerHTML = "<p style='font-size: 12px; text-align: left; font-weight: bold; font-family: 'Poppins', sans-serif;'><font color='#fff'><strong>Special</strong><br/><i>SZA</i></font></p>";
                 FotoFooter.src = "https://i.pinimg.com/originals/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg";
                 PFooter1.innerHTML = "\
@@ -3016,6 +3600,13 @@
                         <div style='font-weight: bold; font-size: 13px; color: #378C3F; font-style: italic;'>Producer</div>\
                     </div>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PSidebarKiri7.innerHTML = "<p style='font-size: 12px; text-align: left; font-weight: bold; font-family: 'Poppins', sans-serif;'><font color='#fff'><strong>Shirt</strong><br/><i>SZA</i></font></p>";
                 FotoFooter.src = "https://i.pinimg.com/originals/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg";
                 PFooter1.innerHTML = "\
@@ -3044,6 +3635,13 @@
                         <div style='font-weight: bold; font-size: 13px; color: #378C3F; font-style: italic;'>Producer</div>\
                     </div>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PSidebarKiri7.innerHTML = "<p style='font-size: 12px; text-align: left; font-weight: bold; font-family: 'Poppins', sans-serif;'><font color='#fff'><strong>Open Arms</strong><br/><i>SZA feat. Ol'Dirty Bastard</i></font></p>";
                 FotoFooter.src = "https://i.pinimg.com/originals/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg";
                 PFooter1.innerHTML = "\
@@ -3072,6 +3670,13 @@
                         <div style='font-weight: bold; font-size: 13px; color: #378C3F; font-style: italic;'>Producer</div>\
                     </div>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PSidebarKiri7.innerHTML = "<p style='font-size: 12px; text-align: left; font-weight: bold; font-family: 'Poppins', sans-serif;'><font color='#fff'><strong>Forgiveless</strong><br/><i>SZA feat. Ol'Dirty Bastard</i></font></p>";
                 FotoFooter.src = "https://i.pinimg.com/originals/dc/8b/6d/dc8b6da66ec0cd2952d8d214376ab97d.jpg";
                 PFooter1.innerHTML = "\
@@ -3105,6 +3710,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA feat. Ol'Dirty Bastard<br/><i>Forgiveless</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_Forgiveless_(Audio)_ft._Ol'_Dirty_Bastard_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3133,6 +3745,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA<br/><i>Notice Me</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_Notice_Me_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3161,6 +3780,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA<br/><i>F2F</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_F2F_(Audio)_MP3_256kbps.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3189,6 +3815,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>SZA<br/><i>Seek & Destroy</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/SZA_-_Seek_%26_Destroy_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3217,6 +3850,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Olivia Rodrigo<br/><i>All I Want</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Olivia_Rodrigo_-_All_I_Want_(Official_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3245,6 +3885,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Olivia Rodrigo<br/><i>ballad of a homeschooled girl</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Olivia_Rodrigo_-_ballad_of_a_homeschooled_girl_(Official_Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3273,6 +3920,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Olivia Rodrigo<br/><i>love is embarrassing</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Olivia_Rodrigo_-_love_is_embarrassing_(Official_Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3301,6 +3955,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Billie Eilish<br/><i>What Was I Made For?</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Billie_Eilish_-_What_Was_I_Made_For__(Official_Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3329,6 +3990,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Billie Eilish<br/><i>idontwannabeyouanymore</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Billie_Eilish_-_idontwannabeyouanymore_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3357,6 +4025,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Billie Eilish<br/><i>party favor</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Billie_Eilish_-_party_favor_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3385,6 +4060,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Billie Eilish<br/><i>all the good girls go to hell</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Billie_Eilish_-_all_the_good_girls_go_to_hell_(Lyrics)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3413,6 +4095,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Billie Eilish<br/><i>TV</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Billie_Eilish_-_TV_(Official_Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3441,6 +4130,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Paint The Town Red</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/WhatsApp%20Audio%202024-01-30%20at%2014.43.49.mpeg";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3469,6 +4165,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Demon</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Demons_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3497,6 +4200,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Attention</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Attention_(Lyrics)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3525,6 +4235,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Attention</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Attention_(Lyrics)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3553,6 +4270,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Ouchies</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Ouchies_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3581,6 +4305,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Go Off</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Gun_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3609,6 +4340,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Fuck The Girls (FTG)</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/F__k_The_Girls_(FTG)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3637,6 +4375,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Go Off</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Go_Off_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3665,6 +4410,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Shutcho</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Shutcho_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3693,6 +4445,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Doja Cat<br/><i>Can't Wait</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Doja_Cat_-_Can't_Wait_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3721,6 +4480,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>21 Savage<br/><i>redrum</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/21_Savage_-_redrum_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3749,6 +4515,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Drake, 21 Savage<br/><i>Rich Flex</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Drake%2C_21_Savage_-_Rich_Flex_(Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3777,6 +4550,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>21 Savage, Doja Cat<br/><i>n.h.i.e</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/21_Savage%2C_Doja_Cat_-_n.h.i.e._(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3805,6 +4585,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>21 Savage, Mariah The Scientist<br/><i>dark day</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/21_Savage%2C_Mariah_the_Scientist_-_dark_days_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3833,6 +4620,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>21 Savage<br/><i>all of me</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/21_Savage%2C_Mariah_the_Scientist_-_dark_days_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3861,6 +4655,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>The Weeknd<br/><i>Starboy</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/The_Weeknd_-_Starboy_(Audio)_ft._Daft_Punk_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3889,6 +4690,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>The Weeknd<br/><i>Die For You</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Die_For_You_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3917,6 +4725,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>The Weeknd, Jenni, Lily Rose Depp<br/><i>One Of The Girls</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/The_Weeknd%2C_JENNIE_%26_Lily_Rose_Depp_-_One_Of_The_Girls_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3945,6 +4760,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>The Weeknd, Playboi Carti, Madonna<br/><i>Populer</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/The_Weeknd%2C_Playboi_Carti%2C_Madonna_-_Popular_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -3973,6 +4795,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>The Weeknd<br/><i>Blinding Lights</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/The_Weeknd_-_Blinding_Lights_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4001,6 +4830,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Taylor Swift<br/><i>We Never Ever Getting Back</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Taylor_Swift_-_We_Are_Never_Ever_Getting_Back_Together_(Taylor's_Version)_(Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4029,6 +4865,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Taylor Swift<br/><i>You Belongs To Men</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Taylor_Swift_-_You_Belong_With_Me_(Taylor's_Version)_(Lyric_Video)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4057,6 +4900,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Taylor Swift<br/><i>Cruel Summer</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Taylor_Swift_-_Cruel_Summer_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4085,6 +4935,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Ariana Grande<br/><i>yes, and?</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Ariana_Grande_-_yes%2C_and__(official_audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4113,6 +4970,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>XXXTENTACION<br/><i>Moonlight</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Moonlight_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4141,6 +5005,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>D4vd<br/><i>Romantic Homicide</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/d4vd_-_Romantic_Homicide_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4169,6 +5040,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Nicki Minaj<br/><i>Bahm Bahn</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Nicki_Minaj_-_Bahm_Bahm_(Official_Audio)_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4197,6 +5075,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Ava Max<br/><i>Choose Your Fighter</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Ava_Max_-_Choose_Your_Fighter_(From_Barbie_The_Album)_%5BOfficial_Audio%5D_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4225,6 +5110,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Beyonce<br/><i>Fomation</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Formation_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4253,6 +5145,13 @@
                 PFooter1.innerHTML = "\
                     <p style='font-size: 12px; font-weight: bold; font-family: 'Poppins', sans-serif;''><font color='#fff'>Lana Del Rey<br/><i>Margaret</i></font></p>\
                 ";
+                Lyrics.innerHTML = "\
+                <div style='height: 70vh; max-height: 70vh;'>\
+                    <div style='display:flex; justify-content:center; align-items:center; text-align:center;'>\
+                        <p style='font-size: 50px; font-weight: 600; color:#FFF;'>Lyrics Not Available</p>\
+                    </div>\
+                </div>\
+                "
                 PFooter2.src = "https://raw.githubusercontent.com/Stanley019/AudioPressurelicious/main/Lana_Del_Rey_-_Margaret_(Audio)_ft._Bleachers_MP3_256kbps_256k.mp3";
                 setTimeout(() => {
                     PFooter2.play()
@@ -4849,6 +5748,33 @@ for (let i = 0; i < resizableElements.length; i++) {
 document.addEventListener('mouseup', onMouseUp);
 // Menambahkan event listener untuk pergerakan mouse
 document.addEventListener('mousemove', onMouseMove);
+    </script>
+     <script>
+        $(document).ready(function(){
+            getGreeting();
+            console.log('Run Greatting!!')
+        })
+        
+        function getGreeting() {
+            const currentTime = new Date();
+            const currentHour = currentTime.getHours();
+            let greeting = '';
+
+            if (currentHour >= 1 && currentHour < 11) {
+                greeting = 'Selamat Pagi';
+            } else if (currentHour >= 11 && currentHour <= 3 ) {
+                greeting = 'Selamat Siang';
+            } else if (currentHour > 3 && currentHour <= 18 ) {
+                greeting = 'Selamat Sore';
+            } else {
+                greeting = 'Selamat Malam';
+            }
+
+            return greeting;
+        }
+
+        const greetingText = document.getElementById('greetingText');
+        greetingText.textContent = getGreeting();
     </script>
 </body>
 </html>

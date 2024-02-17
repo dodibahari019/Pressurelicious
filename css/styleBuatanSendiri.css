@@ -283,3 +283,50 @@ tbody tr:hover {
    right: -5px; /* Menetapkan area pinggir hanya di sisi kanan */
    cursor: col-resize; /* Gaya kursor col-resize untuk area pinggir */
 }
+
+.itemFotoArtis {
+   border-radius: 10px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0px 2px 3px 1px #0006;
+ }
+ .itemFotoArtis:before {
+   font-size: 30px;
+   line-height: 50px;
+   padding-left: 10px;
+   mix-blend-mode: exclusion;
+   border-radius: 15px;
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   transition: opacity 0.65s ease 0s;
+   box-sizing: border-box;
+ }
+ .itemFotoArtis:after {
+   content: "";
+   background-color: #fff9;
+   opacity: 0.6;
+   top: 0;
+   bottom: 0;
+   left: -100%;
+   position: absolute;
+   width: 5vmin;
+   box-shadow: 0 0 10vmin 2.5vmin #fff;
+   transform: skew(-20deg);
+   transition: all 0.5s ease;
+ }
+ .itemFotoArtis:hover:before {
+   opacity: 0;
+   transition: opacity 0.65s ease 0s;
+ }
+ .itemFotoArtis:hover:after {
+   left: 400px;
+   transition: left 0.5s ease 0s;
+ }

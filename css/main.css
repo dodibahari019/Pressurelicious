@@ -5005,7 +5005,7 @@ Created using IcoMoon - icomoon.io
 
 .gallery .cc-porfolio-image figure img {
   position: relative;
-  display: block;
+  display: flex;
   max-width: 100%;
   opacity: 1; }
 
