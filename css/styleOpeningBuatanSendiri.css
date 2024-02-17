@@ -1,0 +1,27 @@
+#idFotoTextPressurelicious{
+   background-image: url('../images/cc-bg-1.jpg');
+   background-size: cover;
+   background-clip: text;
+   /* background-position: center; */
+   -webkit-background-clip: text;
+   color: transparent;
+   -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+/* .typing{
+   border-right: 0.1rem solid #FFF;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   animation: typing steps(10, end) forwards infinite 6s;
+}
+@keyframes typing {
+   0%{
+      width: 0%;
+   }
+
+   50%{
+      width: 100%;
+   }
+
+} */

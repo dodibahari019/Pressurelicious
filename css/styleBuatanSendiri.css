@@ -1,0 +1,285 @@
+#IdHeaderDaftarPutar {
+   transition: transform 0.1s ease-in-out;
+}
+ 
+#IdHeaderDaftarPutar:hover {
+   transform: scale(1.06);
+   color: #fff;
+}
+
+#idDivForHover{
+   transition: transform 0.1s ease-in-out;
+}
+ 
+#idDivForHover:hover {
+   transform: scale(0.95);
+   color: #fff;
+}
+
+.ButtonRightSidebar{
+   transition: transform 0.1s ease-in-out;
+}
+
+.ButtonRightSidebar:hover{
+   transform: scale(0.95);
+}
+
+.classChooseMe {
+   transition: transform 0.1s ease-in-out;
+}
+
+.classChooseMe:hover {
+   transform: scale(0.96);
+}
+
+::-webkit-scrollbar {
+   width: 0em;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: transparent;
+}
+
+body {
+   scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+   width: 0em;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: transparent;
+}
+
+tbody tr:hover {
+   background-color: #3b3b3b;
+}
+
+.hoverForAnchor:hover {
+   color: #378C3F;
+   text-decoration: underline;
+   text-decoration-color: #378C3F;
+}
+
+.carousel {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+}
+ 
+.carousel-inner {
+   display: flex;
+   transition: transform 0.5s ease;
+}
+ 
+.carousel-item {
+   flex: 0 0 100%;
+}
+ 
+.carousel-item img {
+   width: 100%;
+}
+ 
+.carousel-control {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   z-index: 1;
+}
+ 
+.carousel-control.prev {
+   left: 20px;
+}
+ 
+.carousel-control.next {
+   right: 20px;
+}
+
+
+.IMissYou {
+   transition: transform 0.1s ease-in-out;
+}
+
+.IMissYou:hover {
+   transform: scale(0.95);
+}
+
+.ButtonArtistRightSidebar{
+   transition: transform 0.1s ease-in-out;
+}
+
+.ButtonArtistRightSidebar:hover{
+   transform: scale(0.95);
+}
+
+.ButtonArtistLeftSidebar{
+   transition: transform 0.1s ease-in-out;
+}
+
+.ButtonArtistLeftSidebar:hover{
+   transform: scale(0.95);
+}
+
+.ButtonArtistLeftSidebarFoto{
+   transition: transform 0.1s ease-in-out;
+}
+
+.ButtonArtistLeftSidebarFoto:hover{
+   transform: scale(0.95);
+   box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.1);
+   border-radius: 10px;
+}
+ 
+.Lyrics{
+   margin: 5px; 
+   padding: 5px; 
+   color: #FFF; 
+   font-size: 30px; 
+   font-weight: bold;
+   text-align: justify;
+   font-family: 'Poppins', sans-serif;
+}
+
+.classPhotoArtist{
+   transition: transform 0.1s ease-in-out;
+}
+
+.classPhotoArtist:hover{
+   transform: translateX(-50px) scale(1.1);
+}
+
+.modal-overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 9999;
+ }
+ 
+ .modal-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transition: transform 0.5s ease-in-out;
+   transform: translate(-50%, -50%);
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 0px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   width: 400px;
+ }
+ 
+ .modal-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .modal-title {
+   margin: 0;
+ }
+ 
+ .modal-body {
+   padding: 10px 0;
+ }
+ 
+ .modal-footer {
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 10px;
+ }
+ 
+ .btn {
+   cursor: pointer;
+   border: none;
+   border-radius: 3px;
+   padding: 5px 10px;
+   margin-left: 5px;
+ }
+ 
+ .btn-primary {
+   background-color: #007bff;
+   color: #fff;
+ }
+ 
+ .btn-secondary {
+   background-color: #6c757d;
+   color: #fff;
+ }
+ 
+ .close {
+   cursor: pointer;
+ }
+ 
+ p.ClassTextOpening{
+   background: linear-gradient(60deg, #378C3F, #ff9900);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: transform 0.5s ease-in-out;
+ }
+
+ p.ClassTextOpening:hover{
+   transform: scale(1.15) translateX(40px);
+   text-shadow: 0 0 50px #769679;
+ }
+
+ p.ClassTextOpening2{
+   background: linear-gradient(60deg, #378C3F, #ff9900);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: transform 0.5s ease-in-out;
+ }
+
+ p.ClassTextOpening2:hover{
+   transform: scale(1.15) translateX(40px);
+   text-shadow: 0 0 50px #769679;
+ }
+
+ .gallery{
+   width:100%;
+   height:200px;
+   display: flex;
+   gap: 10px;
+
+ }
+
+ .gallery img{
+   width:10%;
+   height:100%;
+   object-fit: cover;
+   border-radius: 10px;
+   border: 0.5px solid #FFF;
+   transition: all ease 0.5s;
+   cursor: pointer;
+ }
+
+ .gallery img:hover{
+   width: 100%;
+ }
+
+ .resizable {
+   width: 25%;
+   height: 100px;
+   background-color: #ccc;
+   cursor: default; /* Gaya kursor default untuk elemen resizable */
+   position: relative;
+}
+
+.resizable::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 10px; /* Lebar area pinggir */
+   right: -5px; /* Menetapkan area pinggir hanya di sisi kanan */
+   cursor: col-resize; /* Gaya kursor col-resize untuk area pinggir */
+}

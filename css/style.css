@@ -1,0 +1,92 @@
+/* ADD AT 13-12-2023 */
+.backgroundColorOfShit {
+    background-color: #575575;
+}
+/* END */
+
+/* ADD AT 03-01-2024 */
+#content {
+    text-align : center;
+    color : firebrick;
+}
+
+.container {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.center-content {
+    text-align : center;
+    color: #272727;
+    font-family: serif;
+    font-size: 24px;
+}
+
+.deskripsi { 
+    color: #272727;
+    font-family:  Helvetica;
+    font-size: 36px;
+}
+
+h1 {
+    /* INI TERMASUK SELECTOR ELEMENT */
+    color:blueviolet;
+    font-family: tahoma;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    /* INI TERMASUK SELECTOR ELEMENT */
+    color:navy;
+    font-family: Helvetica;
+    font-size: 28px;
+}
+
+p {
+    /* INI TERMASUK SELECTOR ELEMENT */
+    color:rgb(109, 5, 5);
+    font-family: verdana;
+    font-size: 28px;
+}
+
+[target] {
+    /* INI TERMASUK SELECTOR ATRIBUT */
+    background-color:lightgreen;
+    font-weight: 400;
+    font-size: 28px;
+}
+/* bisa juga  */
+/* a[target] {
+    background-color:lightgreen;
+    font-weight: 400;
+    font-size: 28px;
+} */
+
+/* bisa juga pake koma, artinya semua barik h1, h2, dan h5 menggunakan style yang sama */
+/* h1, h2, h3 {
+    something
+} */
+/* kalau titik dua juga bisa ya :: */
+/* something::somethingelse{
+    something
+} */
+
+a.spesial{
+    color: goldenrod;
+    font-family: cursive;
+    font-size: 28px;
+}
+
+a .spesial{
+    /* KALAU a .spesial ARTINYA CLASS SPESIAL YANG DI APIT a . awas spasi itu ngaruh ya*/
+    color: goldenrod;
+    font-family: cursive;
+    font-size: 28px;
+}
+
+/* ID, CLASS, ELEMENT, ATRIBUT ADALAH SELECTOR DALAM CSS */
+/* ID DALAM CONTENT DALAM HTML IDEALNYA D=HANYA BISA DIGUNAKAN DALAM SATU KALI SAJA */
+/* KELEMAHAN DARI ELEMENT ADALAH KETIKA KITA SUDAH MENDEKLARASIKAN ELEMENT KITA GAK BISA LAGI MENGGUNAKAN NILAI STANDARNYA. SO INI SALAH SATU ALASAN KENAPA CLASS ADALAH SELECTOR YANG PALING BANYAK DIGUNAKAN */
+
+/* END */
