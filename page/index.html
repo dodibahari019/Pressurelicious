@@ -2218,7 +2218,7 @@
             </div>
             <div id="BodyRight" class="resizable" style="width: 25%; overflow-y: auto; max-height: calc(100vh - 80px); overflow-x: hidden; height: 100%; background-color: #121212; border-radius: 15px; margin: 5px;">
                 <div style="display: flex; flex-direction: column; background-color: #000000; margin: 3px; border-radius: 15px 15px 8px 8px;">
-                    <div class="ClassTextOpening" style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
+                    <div class="ClassTextOpening" id="IdClickBeranda" style="color:#FFF; margin: 10px; font-size: 18px; display: flex; align-items: flex-start; justify-content: flex-start;">
                         <div style="margin-right: 10px; font-family: 'Poppins', sans-serif;"><i class="fa-solid fa-house"></i></div>
                         <div style="margin-left: 10px;"><p style="font-family: 'Poppins', sans-serif; margin: 0px;">Home</p></div>
                     </div>
@@ -5770,6 +5770,11 @@ document.addEventListener('mousemove', onMouseMove);
 
         const greetingText = document.getElementById('greetingText');
         greetingText.textContent = getGreeting();
+    </script>
+    <script>
+        document.getElementById('IdClickBeranda').addEventListener("click", function(){
+            window.location.href = "../index.html"
+        });
     </script>
 </body>
 </html>
